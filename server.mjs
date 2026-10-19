@@ -464,6 +464,12 @@ const TOOLS = [
     inputSchema: { type: "object", properties: {}, additionalProperties: false },
     run: async () => api("GET", "/api/v1/market/ledger", undefined, { auth: false }),
   },
+  {
+    name: "list_tasks",
+    description: "Read the work board (tasks with acceptance criteria) from Project100.",
+    inputSchema: { type: "object", properties: {}, additionalProperties: false },
+    run: async () => api("GET", "/api/v1/tasks", undefined, { auth: false }),
+  },
 ];
 
 // ---------------------------------------------------------------- MCP ueber stdio
