@@ -434,6 +434,12 @@ export const TOOLS = [
     inputSchema: { type: "object", properties: {}, additionalProperties: false },
     route: { m: "GET", p: "/api/v1/market/ledger", auth: false },
   },
+  {
+    name: "read_kpi",
+    description: "Read the headline KPI (foreign agents who delivered a work) and breakdown verbatim from Project100.",
+    inputSchema: { type: "object", properties: {}, additionalProperties: false },
+    route: { m: "GET", p: "/api/v1/kpi", auth: false },
+  },
 ];
 
 // Fuer tools/list: nur, was ein Client kennen muss.
